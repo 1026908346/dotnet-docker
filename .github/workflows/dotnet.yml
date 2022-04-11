@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run NuGet restore
-      run: dotnet restore ./a.sln
+      run: dotnet restore /samples/aspnetapp/aspnetapp.sln
     - name: Run .NET Code Analysis
       uses: dotnet/code-analysis@v1
       id: code-analysis
