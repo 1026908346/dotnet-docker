@@ -14,7 +14,7 @@ jobs:
     - name: Run NuGet restore
       run: dotnet restore /samples/aspnetapp/aspnetapp.sln
     - name: Run .NET Code Analysis
-      uses: dotnet/code-analysis@v1
+      uses: dotnet/code-analysis@main
       id: code-analysis
       with:
        build-breaking: true
